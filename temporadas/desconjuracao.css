@@ -1,0 +1,198 @@
+:root{
+    --cor-fundo:#290606;
+    --cor-fonte:#ffffff;
+    --cor-hover:#810b0b;
+
+}
+* {
+    padding: 0px;
+    margin:0px;
+}
+
+li{
+    list-style: none;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo); 
+    color: var(--cor-fonte);
+    height:100vh;
+   
+}
+
+.container { /*O menu de cima*/
+    display: flex;
+    align-items: center;
+    padding: 2% 2%;
+    background: linear-gradient(90deg, rgba(13,3,3,1) 0%, rgba(13,3,3,1) 25%, rgba(41,6,6,1) 100%);
+  
+}
+
+.menu { /*As configurações do menu de cima*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.menu__link { /*As palavras do menu de cima*/ 
+  color: var(--cor-fonte);
+  font-size: 23px;
+  font-family:'Times New Roman';
+  display:inline;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 15px;
+
+}
+
+.menu__link:hover{ /*Altera a cor das palavras no menu quando passa o mouse*/
+    color: var(--cor-hover);
+  }
+
+.logo img{
+    height: 70px;
+}
+
+.menu__link:hover .submenu{ /*Faz aparecer o submenu assim que o mouse passa por cima do menu*/
+    display:block;
+}
+
+.submenu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    background-color: rgb(59, 7, 7);
+    display: none; /*O elemento nao gera caixa */
+}
+
+.submenu a{
+    display: block; /*p exibir na vertical */
+    color: var(--cor-fonte);
+    text-decoration:none;
+    padding: 10px;
+}
+
+.submenu a:hover{
+   background-color: var(--cor-hover)
+}
+
+/*-----------------CORPO-------------------*/
+
+.corpo{
+   margin-bottom: 5%;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 40px;
+    font-family: Georgia;
+    text-shadow: 0px 0px 10px #a71010;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    background: linear-gradient(to bottom, rgb(41,6,6), rgb(70, 4, 4) , rgb(41,6,6) );
+}
+
+.center {
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 7%;
+    font-size: 19px;
+    line-height: 1.8;
+    text-indent: 5%;
+    text-align: justify;
+
+}
+
+
+/*----------------Historia---------------------*/
+
+.corpo2 {
+    height: 450px;
+    background-color: black;
+    display: block;
+    
+}
+
+.titulo-secundario {
+    padding: 4%;
+    text-align: center;
+    font-size: 35px;
+    font-family: Georgia;
+    text-shadow: 0px 0px 10px #a71010;
+    margin-bottom: 1%;
+}
+
+span {
+    color: #e20404;
+}
+
+/*----------------PERSONAGENS---------------------*/
+
+.container-todas-imagens{ /*caixona com todas as imagens e textos*/
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+
+}
+
+.containerp { /*Caixa com os textos*/
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    width: 1000px;
+    
+}
+
+.containerp p { /*Os textos*/
+    font-size: 20px;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.containerimg { /*Caixa com as imagens*/
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.containerimg img { /*as imagens*/
+    display: inline-block;
+    align-items: center;
+    border: solid 8px, rgb(85, 9, 9);
+    border-radius: 50px;
+}
+
+/*---------------FOOTER---------------*/
+
+.footer {
+    background-color: #000000;  
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    padding-bottom: 40px;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 19px;
+    line-height: 1.8;
+    margin-top: 40px;
+  
+}
+
+.linhadeco {
+    min-height: 0.1vh;
+    max-width: 700vh ;
+    display:block;
+    background: #a71010;
+}
